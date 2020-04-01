@@ -1,7 +1,8 @@
 const fs = require('file-system');
-const radiosJson = require('./data/radios_chilenas.json'); // cambiar el file para otros paises
+// agregar el folder data con los files JSON que se quiera filtrar
+const radiosJson = require('./data/radios_chilenas.json'); // (cambiar el file para otros paises)
 
-let radiosList = { radios_chile: [] };
+let radiosList = { radios_chile: [] };  // cambiar nombre de la prop radios_chile
 
 for (const radio of radiosJson['radios']) {
     let radioItem = {};
