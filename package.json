@@ -1,0 +1,15 @@
+{
+  "name": "json-radio-export",
+  "version": "1.0.0",
+  "description": "script para exportar json con la lista de radios filtradas para firebase",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "haracena.dev",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2"
+  }
+}
