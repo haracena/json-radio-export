@@ -6,7 +6,7 @@ let radiosList = { radios_chile: [] };  // cambiar nombre de la prop radios_chil
 
 for (const radio of radiosJson['radios']) {
     let radioItem = {};
-    radioItem.title = radio['result']['station']['name'];
+    radioItem.title = capitalizeFirstLetter(radio['result']['station']['name']);
     radioItem.id = getRadioId(radio);
     radioItem.artUri = 'undefined';
     radiosList.radios_chile.push(radioItem);
@@ -26,4 +26,8 @@ function getRadioId(radio) {
         }
     }
     return radioId;
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
